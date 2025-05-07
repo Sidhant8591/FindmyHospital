@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Services</title>
+    <!-- Mapbox CSS and JS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Hospital Finder</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>Find Nearby Hospitals</h1>
+            <p>Locate emergency services, check bed Availability, and get directions instantly</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="check for availability">
+                <button onclick="findNearbyHospitals()" class="primary-button">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <!-- <button onclick="getCurrentLocation()" class="secondary-button">
+                <i class="fas fa-location-arrow"></i> Use Current Location
+            </button> -->
+        </section>
+
+        <!-- Map and Results Section -->
+        <div class="content-grid">
+            <img src ="https://shinonglobal.com/wp-content/uploads/2022/05/Fortis-Flt.-Lt.-Rajan-Dhall-Hospital-Vasant-Kunj-Delhi.jpg">
+            <!-- <section class="map-section">
+                <div id="map"></div>
+            </section> -->
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <h1>Hospital Collaborations</h1><br>
+                <div id="hospital-list" class="hospital-list">
+                    <ul>
+                    <li><h2>Fortis</h2></li>
+                    <li><h2>Apollo</h2></li>
+                    <li><h2>Neelam</h2></li>
+                    <li><h2>Gian Sagar</h2></li>
+                    <li><h2>PGI</h2></li>
+                    <li><h2>IVY</h2></li>
+                    <li><h2>Command</h2></li>
+                    <li><h2>Bahara</h2></li>
+                    <li><h2>Guru Nanak</h2></li>
+                    <li><h2>Tagore</h2></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Hospital Details Section -->
+        <section id="hospital-details-section" class="hospital-details-section hidden">
+            <h2>Hospital Details</h2>
+            <div id="hospital-details" class="details-container">
+                <!-- Hospital details will be populated here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Hospital Finder. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom JS -->
+    <script src="services.js"></script>
+</body>
+</html>

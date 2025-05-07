@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:hsl(186,100%,19%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    border-top: 4px solid #0275d8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.contact-info a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #00796b;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0275d8;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color:hsl(186,100%,19%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color:hsl(186, 95%, 31%);
+    transform: translateY(-3px);
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #00796b;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Back to Main Website Button */
+.back-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #004d40;
+    transform: translateY(-3px);
+}
+/* Welcome Heading */
+.welcome-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

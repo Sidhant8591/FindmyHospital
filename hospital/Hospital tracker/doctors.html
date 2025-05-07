@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doctors.css">
+    <title>Doctor Appointment</title>
+</head>
+<body>
+    <!-- Back to Main Website -->
+    <div class="back-to-main">
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Available Doctors</h1>
+        <div id="doctor-list"></div>
+    </div>
+
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Appointment</h2>
+            <p id="doctor-info"></p>
+            <label for="appointment-time">Choose Appointment Time:</label>
+            <select id="appointment-time"></select>
+            <button id="confirm-appointment">Confirm Appointment</button>
+        </div>
+    </div>
+
+    <div id="confirmation-message" class="confirmation"></div>
+
+    <!-- Chat Modal -->
+    <div id="chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-chat">&times;</span>
+            <h2>Chat with Doctor</h2>
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-chat">Send</button>
+        </div>
+    </div>
+
+    <script src="doctors.js"></script>
+</body>
+</html>
